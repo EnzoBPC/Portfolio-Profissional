@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enzo | Portfólio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="hero container">
+    <div class="info">
+      <h1>Enzo B P Cunha</h1>
+
+      <div class="sub-block">
+        <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+        <a href="#contato" class="btn contact-btn">
+          ENTRAR EM CONTATO <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="photo">
+      <img src="images/fotoperfil.png" alt="Foto de Enzo Biagio Paludo Cunha" loading="lazy">
+    </div>
+</div>
+
+  </section>
+  <hr class="section-divider" />
+
+  <section id="sobre" class="about container">
+    <div class="about-box">
+      <nav class="about-tabs" role="tablist" aria-label="Seções do perfil">
+        <button class="about-tab is-active" role="tab" aria-selected="true"
+                data-tab="sobre-mim" id="tab-sobre">
+          Sobre mim
+        </button>
+        <button class="about-tab" role="tab" aria-selected="false"
+                data-tab="competencias" id="tab-competencias">
+          Competências
+        </button>
+        <button class="about-tab" role="tab" aria-selected="false"
+                data-tab="habilidades" id="tab-habilidades">
+          Habilidades
+        </button>
+      </nav>
+
+      <div class="about-panel">
+        <article class="tab-content is-active" id="pane-sobre-mim" role="tabpanel" aria-labelledby="tab-sobre">
+          <h3>Sobre mim</h3>
+          <p>Olá! Meu nome é <strong>Enzo Biagio Paludo Cunha</strong>, tenho 21 anos e sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> na <strong>UNIDESC</strong>.</p>
+          <p>Sou movido por curiosidade e criatividade, sempre em busca de soluções inovadoras e da otimização de processos complexos. Gosto de entender como as coisas funcionam — e principalmente, como podem funcionar melhor.</p>
+          <p>Tenho noções em <strong>Java</strong>, <strong>Python</strong> e <strong>SQL</strong>, e estou constantemente aprimorando minhas habilidades técnicas e práticas de desenvolvimento.</p>
+          <p>Valorizo o <strong>trabalho em equipe</strong> e acredito que colaboração é a base de qualquer bom projeto. Estou sempre disposto a aprender, ensinar e contribuir na resolução de desafios.</p>
+
+        </article>
+
+        <article class="tab-content" id="pane-competencias" role="tabpanel" aria-labelledby="tab-competencias" hidden>
+          <h3>Competências</h3>
+          <ul class="bullets">
+            <li>Facilidade e disposição para o aprendizado</li>
+            <li>Bom relacionamento interpessoal</li>
+            <li>Zelo pela higiene e organização</li>
+            <li>Cordialidade, simpatia e respeito</li>
+          </ul>
+        </article>
+
+        <article class="tab-content" id="pane-habilidades" role="tabpanel" aria-labelledby="tab-habilidades" hidden>
+          <h3>Habilidades</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h4>Noções em Desenvolvimento Web</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h4>Noções em Java</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h4>Noções em Banco de Dados<br>(SQL / NoSQL)</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h4>Resolução de Problemas</h4>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <hr class="section-divider" />
+
+  <section class="projects container">
+  <h2 class="projects-title">Últimos Projetos</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <strong>Brain Match</strong>
+      <p>Jogo de memória desenvolvido com Java e Swing, voltado para treinar foco e raciocínio. Inclui sistema de pontuação e interface responsiva.</p>
+    </div>
+
+    <div class="project-card">
+      <strong>Sistema de Gestão de Academia</strong>
+      <p>O projeto foi desenvolvido em Java e Java Swing, contando com oito telas interativas e navegação livre entre elas.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<section id="contato" class="contact-section">
+  <h2>Entre em Contato</h2>
+  <form class="contact-form" action="#" method="post">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Assunto</label>
+      <textarea id="subject" name="subject" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-send">
+      <i class="fas fa-paper-plane"></i> Enviar
+    </button>
+  </form>
+
+  <div class="social-contact">
+    <p>Ou me encontre nas redes sociais:</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/enzo_bpc/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/EnzoBPC" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <script src="index.js" defer></script>
+  <footer class="footer">
+  <p>© 2025 Enzo Biagio Paludo Cunha. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
